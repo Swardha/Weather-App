@@ -12,7 +12,7 @@ body{
     flex-direction: column;
     min-height: calc(100vh - 1px);
     padding:1rem;
-    background-color: rgb(56, 95, 202);
+    background-color: rgb(98, 117, 224);
 }
 
 img{
