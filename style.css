@@ -101,6 +101,7 @@ img{
   padding:10px 10px ;
   width: 80%;
   margin: 1.25rem;
+  color:white;
   background-color: rgb(153, 151, 175);
   border: 2px solid rgb(90, 86, 155);
   border-radius: 2rem;
@@ -117,7 +118,7 @@ img{
     border:none;
     outline:none;
     font-size: 30px;
-    margin: 1.25rem ;
+    /* margin: 1.25rem ; */
 }
 
 .search-box #search-btn:hover{
