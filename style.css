@@ -94,13 +94,14 @@ img{
     margin: 1rem;
     align-items: center;
     display: flex;
+    gap:1rem;
     justify-content: center;
 }
 
 .search-box .search{
   padding:10px 10px ;
-  width: 80%;
-  margin: 1.25rem;
+  width: 90%;
+  margin: 1rem;
   color:white;
   background-color: rgb(153, 151, 175);
   border: 2px solid rgb(90, 86, 155);
@@ -109,6 +110,8 @@ img{
 }
 
 .search-box .search:focus{
+    border:none;
+    outline:none;
     border: 2px solid rgb(82, 69, 194);
 }
 
