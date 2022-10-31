@@ -1,19 +1,37 @@
 *{
     padding:0;
     margin:0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
 }
 /* body section */
 body{
-    background-color: rgb(128, 155, 241);
-    /* background-color: rgb(4, 34, 4); */
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+    min-height: calc(100vh - 1px);
+    padding:1rem;
+    background-color: rgb(56, 95, 202);
+}
+
+img{
+    max-width: 100%;
+    width:100%;
+    padding:1rem;
 }
 
 /* toggle-btn section */
 .toggle{
-    margin:30px;
+    margin-bottom: 1rem;
 }
+
+.header{
+    width:100px;
+    margin: 2rem;
+    align-items: flex-end;
+}
+
 #toggler{
     -webkit-appearance: none;
     appearance: none;
@@ -24,22 +42,13 @@ body{
     right:0;
     border:none;
     outline:none;
-    margin-top: 3px;
-    margin-right: 20px;
+    margin: 1.25rem;
+    /* margin-top: 3px;
+    margin-right: 20px; */
     position: absolute;
     cursor:pointer;
 }
-#toggler:after{
-    position: absolute;
-    content: "";
-    height:30px;
-    width:30px;
-    top:5px;
-    left:5px;
-    background:linear-gradient(red,yellow);
-    border-radius: 50%;
 
-}
 .dark{
     background-color: rgb(4, 4, 49);
 }
@@ -53,157 +62,143 @@ body{
     left:30px;
 }
 
+#toggler:after{
+    position: absolute;
+    content: "";
+    height:30px;
+    width:30px;
+    top:5px;
+    left:5px;
+    background:linear-gradient(red,yellow);
+    border-radius: 50%;
+
+}
+
 /* container section */
 .container{
     width:100%;
-    position: absolute;
-    display:flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin-top: 70px;
+    padding:1.25rem;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.14);
+    margin: 2rem 0;
 }
+
 /* card-1 section */
+
 .card-1{
-    width:65vmin;
-   /* margin: auto; */
-    background-color:transparent;
-    align-items: center;
-    border:none;
-    border-radius: 20px;
-    /* background: url("i1.png") no-repeat center center; */
+  border-radius: 5px;
+  margin: 2rem 0;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.14);
 }
-.card-1 img{
-    width:100%;
-    border-radius: 20px;
-     /* display: block;
-     margin:auto; */
-     align-items: center;
-    height:410px;
-     justify-content: center;
-  
- }
-/* card-2 section */
-.card-2{
-    margin:10px;
-     width:65vmin;
-     background-color:rgb(48, 107, 196);
-     align-items: center;
-     margin-left: 25px;
-     border-radius: 20px;
-     box-shadow:inset -5px -5px 13px rgb(0, 0, 0, 0.15 ),
-     inset 5px 5px 12px rgb(77, 130, 211) ;
-     
-    ;
- }
-  /* inset -5px -5px 12px white,
- inset 5px 5px 12px rgb(0, 0, 0, 0.15); */
 
- .card-2 #result{
-    text-align: center;
-    justify-content: center;
-}
-/* input area section */
 .search-box{
-    display:flex;
-    justify-content: space-between;
-}
-
-.search{
-    margin:10px;
-    width:70%;
-    padding:9px;
-    border:none;
-    outline:none;
-    background-color: transparent;
-    border-bottom: 3px solid rgb(17, 64, 134);
-    font-size: 30px;
-}
-
-input:focus{
-    border-bottom: 3px solid rgb(5, 5, 73);
-}
-
-/* search-icon styling */
-#search-btn{
-    width:10%;
-    padding:3px;
-    margin-right: 20px;
-    margin-top: 20px;
-    color:rgb(11, 44, 94);
-    background-color: transparent;
-    font-size: 40px;
-    border:none;
-    outline:none;
-}
-/* img for show-case */
-.main-img{
-    height: 100px;
-    width:100px;
-    margin-top: 10px;
-}
-/* displaying current weather img */
-.show-weather{
-    height:100px;
-    width:100px;
-}
-/* heading for displaying weather information */
-h2{
-    margin-top: 15px;
-    font-size: 30px;
-    color:white;
-}
-h3{
-    margin-top: 10px;
-    font-size: 20px;
-    color:white;
-}
-h4{
-    margin-top: 10px;
-    font-size: 25px;
-    color:white;
-}
-/* displaying min-max temperature */
-.temp-min-max{
-    display:flex;
-    margin:10px;
-    text-align: center;
+    margin: 1rem;
     align-items: center;
-    justify-content:space-evenly;
-}
-/* displaying current month and year with reference to weather */
-.day-month{
+    display: flex;
     justify-content: center;
 }
 
-#day{
-    text-align: center;
-    font-size: 40px;
-    color:rgb(4, 4, 49);
-    margin:20px;
+.search-box .search{
+  padding:10px 10px ;
+  width: 80%;
+  margin: 1.25rem;
+  background-color: rgb(153, 151, 175);
+  border: 2px solid rgb(90, 86, 155);
+  border-radius: 2rem;
+  font-size: 16px;
 }
 
-
-
-
-
-/* .container{
-    position:absolute;
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border:3px solid grey;
-    width:130vmin;
- 
-    transform: translate(-50%,-50%);
-    top:50%;
-    left:50%;
-    justify-content: center;
+.search-box .search:focus{
+    border: 2px solid rgb(82, 69, 194);
 }
 
-.box{
-    background-color: blue;
-    margin:10px;
-    width:60vmin;
-    padding:10px;
+.search-box #search-btn{
+    background: transparent;
+    color:rgb(18, 29, 92);
+    border:none;
+    outline:none;
+    font-size: 30px;
+    margin: 1.25rem ;
+}
+
+.search-box #search-btn:hover{
+    color:blue;
+    cursor: pointer;
+}
+
+/* .container #result{
+    padding: 1.25rem;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.14),
+    -5px -5px 5px rgba(0,0,0,0.14);
 } */
+
+/* card-2 section */
+.container .card-2{
+    padding: 1.25rem;
+    border-radius: 5px;
+    margin:2rem 0;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.14);
+}
+
+#result .head2{
+    text-align: center;
+    margin: 1rem;
+    font-size: 2.25rem;
+    color:white;
+}
+
+#result .head3{
+    text-align: center;
+    margin: 1.25rem;
+    font-size: 1.50rem;
+    color:white;
+}
+
+#result .head4{
+    text-align: center;
+    margin: 1.25rem;
+    font-size: 1.50rem;
+    color:white;
+}
+
+#result #day{
+    text-align: center;
+    font-size: 1.50rem;
+    margin:1.25rem;
+    color:white;
+}
+
+/* attribution section */
+.attribution{
+    font-size: 15px;
+    color:white;
+    text-align: center;
+}
+
+.attribution a{
+    color:rgb(28, 28, 175);
+    text-decoration: none;
+}
+
+/* media queries */
+ 
+@media(min-width:1024px){
+    .container{
+        display:flex;
+        gap:2rem;
+    }
+
+}
+
+
+
+
+  
+
+ 
+
+
+
+
+
+
