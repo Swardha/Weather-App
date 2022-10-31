@@ -99,20 +99,20 @@ img{
 }
 
 .search-box .search{
-  padding:10px 10px ;
+  /* padding:10px 10px ; */
   width: 90%;
   margin: 1rem;
   color:white;
-  background-color: rgb(153, 151, 175);
-  border: 2px solid rgb(90, 86, 155);
-  border-radius: 2rem;
-  font-size: 16px;
+  background-color: transparent;
+  outline:none;
+  border:none;
+  border-bottom: 2px solid rgb(43, 46, 197);
 }
 
 .search-box .search:focus{
     border:none;
     outline:none;
-    border: 2px solid rgb(82, 69, 194);
+    border-bottom: 2px solid rgb(13, 5, 83);
 }
 
 .search-box #search-btn{
