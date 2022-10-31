@@ -168,9 +168,36 @@ img{
     color:white;
 }
 
+.attribution .fa-heart{
+    color:red;
+    animation: pop-heart 3s ease-in-out infinite;
+}
+
+@keyframes pop-heart{
+    0%{
+        transform: scale(1);
+    }
+
+    20%{
+        transform: scale(1.25);
+    }
+
+    40%{
+        transform: scale(1);
+    }
+
+    60%{
+        transform: scale(1.25);
+    }
+
+    80%{
+        transform: scale(1);
+    }
+}
+
 /* attribution section */
 .attribution{
-    font-size: 15px;
+    font-size: 16px;
     color:white;
     text-align: center;
 }
